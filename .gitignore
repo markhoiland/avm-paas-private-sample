@@ -1,0 +1,20 @@
+# Local Terraform configuration, state, plans, and providers
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+tfplan
+*.tfplan
+crash.log
+crash.*.log
+
+# Local Bicep build outputs
+bicep/main.json
+bicep/main.parameters.json
+
+# Local environment and editor files
+.env
+.env.*
+.vscode/
+.idea/
