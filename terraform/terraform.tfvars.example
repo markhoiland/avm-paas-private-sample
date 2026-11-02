@@ -1,0 +1,13 @@
+# Copy to terraform.tfvars and replace these example values.
+# Authenticate with Azure CLI or ARM_* environment variables, then run:
+# terraform init
+# terraform plan -out=deployment.tfplan
+# terraform apply deployment.tfplan
+# Use a private-connected runner for app deployment and SQL administration.
+# This provisions infrastructure only, not application code or database users.
+subscription_id     = "00000000-0000-0000-0000-000000000000"
+resource_group_name = "rg-private-paas"
+location            = null # Defaults to the existing resource group's region.
+name_prefix         = "replace-with-unique-prefix"
+sql_admin_object_id = "11111111-1111-1111-1111-111111111111"
+sql_admin_login     = "sql-admins"
